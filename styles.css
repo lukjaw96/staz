@@ -1,0 +1,175 @@
+body {
+	background-color: black;
+	margin: auto;
+	color: #8B8B8B;	
+}
+
+.wrapper {
+	display: flex;
+	flex-direction:row;
+	width:80%;
+	margin: 0 auto;	
+}
+
+.mainTable {	
+	background-color: black; 
+	border-collapse: collapse;
+}
+
+.mainTable thead {
+	height:50px;
+	background-color: #9600B3;	
+	text-transform: uppercase;
+	color: #FFF9F7;
+}
+
+.mainTable tbody tr:nth-of-type(odd) { 
+	background-color: #1B1919; 
+}
+
+.mainTable td, .mainTable th { 
+  padding: 6px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.active {
+	background-color: #9600B3;
+}
+
+.arrowDown, .arrowUp {
+	display:inline-block;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position:relative;
+	top:-3px;
+}
+
+.arrowDown {	  
+	border-top: 5px solid white;
+}
+
+.arrowUp {	  
+	border-bottom: 5px solid white;
+}
+
+.paginationContainer {
+	text-align: center;	
+}
+
+.paginationContainer a {
+	display: inline-block;	
+	width:20px;	
+	border: 1px solid #9600B3;
+	margin:5px;
+	text-align: center;
+	color:#FFF9F7;
+}
+.paginationContainer a:hover {
+	background-color: #9600B3;
+	color: #FFF9F7;
+	cursor: pointer; 
+}
+
+.filtersContainer {
+	width:20%;
+	background: black;
+}
+
+.filter {
+	padding: 5px;
+	border: 1px solid #9600B3;
+	margin:5px;
+	text-align: center;
+	color:#FFF9F7;
+	line-height:40px;
+	white-space: nowrap;
+}
+
+.filter:hover {
+	cursor: pointer;
+	background-color: #9600B3;
+	color: #FFF9F7;
+}
+
+.filter img {
+	position:relative;
+	top:5px;
+}
+
+.sectionContainer {
+	display:flex;
+	flex-direction:column;
+
+}
+
+h3 {
+	margin:0;
+	padding:0;
+}
+
+.shortInput {
+	width:20%;
+}
+
+input {
+	width: 60%;
+	background-color: rgba(204,204,204,0.3);
+	border:none;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	color: black;
+}
+
+.filterButton {
+	display:block;
+	background: #9600B3;
+	color: #FFF9F7;
+	border: 1px solid #9600B3;
+	width:100px;
+	height:30px;
+	margin: 0 auto;
+}
+
+.filterButton:hover {	
+	cursor: pointer;
+	background: black;
+	color: #FFF9F7;
+}
+
+.toPagination {
+	width:20px;
+}
+
+.go {
+	border: 1px solid #9600B3;
+}
+
+.go:hover {
+	background-color: #9600B3;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Staż Chilid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jQueryUI.css">
+    <script src="jQuery.js"></script>
+	<script src="jQueryUI.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="filtersContainer">
+			<h1>Filters</h1>
+
+			<h3>Functions</h3>
+			<span class="filter filterPokojowka">pokojówka</span>
+			<span class="filter filterKamerdyner">kamerdyner</span>
+			<span class="filter filterKucharka">kucharka</span>
+			<span class="filter filterLokaj">lokaj</span>
+				
+			<h3>Date</h3>
+			<input type="text" id="datepicker">		
+			
+			<h3>Id</h3>			
+			<input type="text" id="idExact" placeholder="exact" class="shortInput">
+			<input type="text" id="idFrom" placeholder="from" class="shortInput">
+			-			
+			<input type="text" id="idTo" placeholder="to" class="shortInput">
+
+			<h3>Name</h3>	
+			<input type="text" id="nameExact">
+
+			<h3>Last Name</h3>	
+			<input type="text" id="lastNameExact">
+		
+			<h3>Experience</h3>
+			
+			<input type="text" id="experienceExact" placeholder="exact" class="shortInput">
+
+			
+			<input type="text" id="experienceFrom" placeholder="from" class="shortInput">
+			-
+			<input type="text" id="experienceTo" placeholder="to" class="shortInput">
+						
+			
+			<button class="filterButton">Filter</button>
+		</div>	
+
+		<div class="tableContainer">		
+			<table class="mainTable">
+				<thead>
+					<tr>
+					    <th>id  <span class="arrowDown"></span> <span class="arrowUp"></span>  </th>
+					    <th>firstName <span class="arrowDown"></span> <span class="arrowUp"></span></th>
+					    <th>lastName <span class="arrowDown"></span> <span class="arrowUp"></span></th>
+					    <th>dateOfBirth <span class="arrowDown"></span> <span class="arrowUp"></span></th>
+					    <th>function <span class="arrowDown"></span> <span class="arrowUp"></span></th>
+					    <th>experience <span class="arrowDown"></span> <span class="arrowUp"></span></th>
+					</tr>
+				</thead>
+				<tbody>  
+				</tbody>
+			</table>
+			<div class="paginationContainer"></div>
+		</div>
+	</div>
+    <script src="js.js"></script>
+   	<script>
+		$( function() {
+			$( "#datepicker" ).datepicker({
+				changeMonth: true,
+				changeYear: true
+			});
+		});
+	</script>
+</body>
+</html>
